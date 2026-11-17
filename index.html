@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gabriel Brandão | Consultoria de Imóveis</title>
 <meta name="description" content="Gabriel Brandão, consultor de imóveis em Belo Horizonte há 5 anos. Casas, apartamentos prontos e na planta, com atendimento próximo do primeiro contato às chaves.">
-<meta name="theme-color" content="#141516">
+<meta name="theme-color" content="#0e1a2b">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gabriel Brandão | Consultoria de Imóveis">
 <meta property="og:description" content="Consultoria de imóveis em Belo Horizonte. Fale comigo pelo WhatsApp.">
@@ -22,14 +22,14 @@
    como no cartão, painéis de vidro discretos. */
 :root{
   color-scheme: dark;
-  --ink:#141516;
-  --ink-2:#1b1c1e;
-  --gold:#d8c39a;
-  --gold-deep:#b8975f;
-  --gold-light:#efe0bd;
-  --text:#ece6da;
-  --text-dim:#a39d92;
-  --hair:rgba(216,195,154,.22);
+  --ink:#0e1a2b;
+  --ink-2:#172840;
+  --gold:#e0c48a;
+  --gold-deep:#bb9a5c;
+  --gold-light:#f3e2b9;
+  --text:#f6f3ec;
+  --text-dim:#c4ccd8;
+  --hair:rgba(224,196,138,.22);
   --serif:'Marcellus', serif;
   --sans:'Montserrat', sans-serif;
   --maxw:1100px;
@@ -51,15 +51,15 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;line-height:
 /* ---------------- Fundo fixo ---------------- */
 .sky{position:fixed;inset:0;z-index:-2;pointer-events:none;
   background:
-    radial-gradient(90% 45% at 50% 88%, rgba(184,151,95,.18), transparent 60%),
-    radial-gradient(45% 28% at 52% 80%, rgba(239,224,189,.09), transparent 70%),
-    linear-gradient(180deg,#101112 0%,#141516 40%,#1b1916 72%,#141516 100%)}
+    radial-gradient(90% 45% at 50% 88%, rgba(187,154,92,.18), transparent 60%),
+    radial-gradient(45% 28% at 52% 80%, rgba(243,226,185,.09), transparent 70%),
+    linear-gradient(180deg,#0a1423 0%,#0e1a2b 40%,#142238 72%,#0e1a2b 100%)}
 #dust{position:fixed;inset:0;z-index:-2;pointer-events:none;width:100%;height:100%}
 .paper{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .city{position:fixed;left:0;right:0;bottom:0;z-index:-1;pointer-events:none}
 .city svg{display:block;width:100%;height:30vh;
-  filter:drop-shadow(0 0 2px rgba(239,224,189,.22))}
+  filter:drop-shadow(0 0 2px rgba(243,226,185,.22))}
 .city .d{stroke-dasharray:1 2;stroke-dashoffset:1;
   animation:draw var(--du) cubic-bezier(.45,.05,.3,1) var(--dl) forwards}
 .city .m{stroke-width:1.7}
@@ -76,7 +76,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;line-height:
 
 /* ---------------- Vidro (estilo iOS) ---------------- */
 .glass{position:relative;isolation:isolate;border-radius:28px;
-  background:linear-gradient(180deg,rgba(255,255,255,.085) 0%,rgba(255,255,255,.03) 45%,rgba(216,195,154,.045) 100%);
+  background:linear-gradient(180deg,rgba(150,185,235,.13) 0%,rgba(150,185,235,.05) 45%,rgba(224,196,138,.045) 100%);
   backdrop-filter:blur(30px) saturate(180%) brightness(1.04);
   -webkit-backdrop-filter:blur(30px) saturate(180%) brightness(1.04);
   box-shadow:
@@ -86,24 +86,24 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;line-height:
     0 30px 60px -32px rgba(0,0,0,.75),
     0 10px 24px -14px rgba(0,0,0,.45)}
 .glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;pointer-events:none;z-index:1;
-  background:linear-gradient(160deg,rgba(255,255,255,.34),rgba(255,255,255,.07) 28%,rgba(255,255,255,0) 50%,rgba(216,195,154,.10) 76%,rgba(239,224,189,.26));
+  background:linear-gradient(160deg,rgba(255,255,255,.34),rgba(255,255,255,.07) 28%,rgba(255,255,255,0) 50%,rgba(224,196,138,.10) 76%,rgba(243,226,185,.26));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
 .glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;
   background:
     radial-gradient(120% 70% at 12% -20%,rgba(255,255,255,.10),transparent 55%),
-    radial-gradient(80% 60% at 100% 120%,rgba(216,195,154,.08),transparent 60%)}
+    radial-gradient(80% 60% at 100% 120%,rgba(224,196,138,.08),transparent 60%)}
 
 /* ---------------- Botões ---------------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border-radius:999px;
   font-family:var(--sans);font-weight:500;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;
   padding:1.05rem 2rem;transition:background .35s,color .35s,box-shadow .35s,border-color .35s}
-.btn-gold{color:#1a1610;background:linear-gradient(180deg,var(--gold-light) 0%,var(--gold) 55%,var(--gold-deep) 100%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 6px rgba(110,80,35,.25),0 12px 30px -14px rgba(216,195,154,.85)}
-.btn-gold:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.7),inset 0 -2px 6px rgba(110,80,35,.2),0 16px 40px -12px rgba(216,195,154,1)}
+.btn-gold{color:#fff;background:linear-gradient(180deg,#27a06b 0%,#16805a 55%,#106646 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 6px rgba(0,0,0,.25),0 12px 30px -14px rgba(30,160,105,.9)}
+.btn-gold:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -2px 6px rgba(0,0,0,.2),0 16px 40px -12px rgba(30,160,105,1)}
 .btn-line{color:var(--gold-light);background:rgba(255,255,255,.06);
   backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 0 0 1px rgba(255,255,255,.12)}
-.btn-line:hover{background:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 0 0 1px rgba(216,195,154,.4)}
+.btn-line:hover{background:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 0 0 1px rgba(224,196,138,.4)}
 .btn svg{width:16px;height:16px;flex:none}
 
 /* ---------------- Nav ---------------- */
@@ -244,19 +244,19 @@ footer .tag{font-size:.64rem;color:var(--text-dim)}
   <svg viewBox="-180 196 1384 224" preserveAspectRatio="xMidYMax meet" fill="none">
     <defs>
       <linearGradient id="ouro" gradientUnits="userSpaceOnUse" x1="-560" y1="0" x2="1584" y2="0">
-        <stop offset="0" stop-color="#8a6438"/>
-        <stop offset=".3" stop-color="#c9a46e"/>
-        <stop offset=".45" stop-color="#d8c39a"/>
-        <stop offset=".55" stop-color="#efe0bd"/>
-        <stop offset=".7" stop-color="#c9a46e"/>
-        <stop offset="1" stop-color="#8a6438"/>
+        <stop offset="0" stop-color="#8f6c3c"/>
+        <stop offset=".3" stop-color="#d2b072"/>
+        <stop offset=".45" stop-color="#e0c48a"/>
+        <stop offset=".55" stop-color="#f3e2b9"/>
+        <stop offset=".7" stop-color="#d2b072"/>
+        <stop offset="1" stop-color="#8f6c3c"/>
       </linearGradient>
       <linearGradient id="ouro2" gradientUnits="userSpaceOnUse" x1="-560" y1="0" x2="1584" y2="0">
-        <stop offset="0" stop-color="#b8935e"/>
-        <stop offset=".35" stop-color="#d8c39a"/>
-        <stop offset=".5" stop-color="#efe0bd"/>
-        <stop offset=".65" stop-color="#d8c39a"/>
-        <stop offset="1" stop-color="#b8935e"/>
+        <stop offset="0" stop-color="#bb9a5c"/>
+        <stop offset=".35" stop-color="#e0c48a"/>
+        <stop offset=".5" stop-color="#f3e2b9"/>
+        <stop offset=".65" stop-color="#e0c48a"/>
+        <stop offset="1" stop-color="#bb9a5c"/>
       </linearGradient>
       <!-- máscaras: o que está atrás some onde há prédio na frente -->
       <mask id="atrasFrente" maskUnits="userSpaceOnUse" x="-700" y="0" width="2500" height="434">
@@ -912,7 +912,7 @@ if (IMOVEIS.length) {
     const n = Math.round(w*h/9000);
     for (let i=0;i<n;i++){
       const px = r()*w, py = r()*h*.8, s = r()*1.1+.2, a = r()*.45+.08;
-      x.fillStyle = "rgba(216,195,154," + a + ")";
+      x.fillStyle = "rgba(224,196,138," + a + ")";
       x.beginPath(); x.arc(px,py,s,0,Math.PI*2); x.fill();
     }
   }
