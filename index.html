@@ -240,6 +240,19 @@ footer .tag{font-size:.64rem;color:var(--text-dim)}
   .city .d{animation:none;stroke-dashoffset:0}
   *{transition:none!important}
 }
+/* Contato com retrato */
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center;text-align:left;padding:3rem}
+.contact-photo{margin:0;aspect-ratio:4/5;border-radius:22px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(224,196,138,.25)}
+.contact-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.contact .logo{margin:0}
+.contact .lead{margin-left:0}
+.contact .hero-actions{justify-content:flex-start}
+@media(max-width:860px){
+  .contact{grid-template-columns:1fr;text-align:center;padding:2.2rem 1.6rem}
+  .contact-photo{width:min(240px,64vw);justify-self:center}
+  .contact .logo,.contact .lead{margin-left:auto;margin-right:auto}
+  .contact .hero-actions{justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -848,6 +861,8 @@ footer .tag{font-size:.64rem;color:var(--text-dim)}
   <section id="contato">
     <div class="wrap">
       <div class="contact glass">
+        <figure class="contact-photo"><img src="gabriel-brandao.jpg" alt="Gabriel Brandão, consultor de imóveis" loading="lazy" width="800" height="1000"></figure>
+        <div>
         <span class="logo" role="img" aria-label="Monograma GB"></span>
         <h2>Vamos conversar?</h2>
         <p class="lead">Me chame no WhatsApp. Respondo pessoalmente.</p>
@@ -856,6 +871,7 @@ footer .tag{font-size:.64rem;color:var(--text-dim)}
         <div class="hero-actions">
           <a href="#" class="btn btn-gold js-wa" data-msg="Olá Gabriel! Vim pelo seu site e gostaria de conversar.">Conversar no WhatsApp</a>
           <a href="#" class="btn btn-line" id="instagram" hidden>Instagram</a>
+        </div>
         </div>
       </div>
     </div>
